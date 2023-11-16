@@ -1,0 +1,168 @@
+/*Comentario en CSS*/
+*{
+   
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: x-large;
+    line-height: 150%;
+}
+
+body{ 
+    font-family: 'Capriola', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding:1%;
+}
+
+header{
+    width: 80%;
+    height: 30%;
+}
+
+.perfil{
+    background-color: rgb(215, 194, 243);
+    height: 100%;
+    border: black 5px solid;
+    display: flex;
+    align-items: center;
+    
+}
+
+#cuadro1{
+    background-color: rgb(191, 238, 238);
+    width: 60%;
+    height: 100%;
+    display: flex;
+    
+}
+
+h1{
+    background-color: aqua;
+    color: brown;
+    height:100%;
+    width: 50%;
+    font-size: 310%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.datoscontacto{
+    height: 100%;
+    width: 100%;
+    border: red 5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contacto{
+    background-color: azure;
+    height: 20%;
+    font-size: 200%;
+    padding-bottom: 10%;
+}
+
+.lista1{
+    font-size: 150%;
+}
+
+#fotoperfil{
+    display: flex;
+    width: 38%;
+    border-radius: 20%;
+    transition-duration: 1000ms;
+}
+    #fotoperfil:hover{
+        width: 42%;
+
+}
+
+.decoracion{
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    border-radius: 50%;
+    background-color: brown;
+    animation-duration: 10000ms;
+
+}
+
+.decoracion:hover{
+    from{
+        transform: scale(2);
+    }
+    to{
+        transform: scale(3);
+    }
+}
+.contenedor{
+    background-color: yellow;
+    width: 80%;
+    height: 70%;
+
+}
+
+.titulo{
+    font-size: 175%;
+    width: 0%;
+    padding: 1% 2% 1%;
+    border-right: 10px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: st;
+}
+
+.resumen{
+    border-bottom: 10px black solid; ;
+    display: inline-flex;
+    align-items: center;
+}
+
+#resumen{
+    padding: 2%;
+    font-size: 140%;
+    text-align: justify;
+}
+
+.seccionlaboral{
+    border-bottom: 10px black solid; ;
+    display: inline-flex;
+}
+
+.experiencia{
+    padding: 2%;
+    text-align: justify;
+}
+
+.labor{
+    font-size: 160%;
+}
+
+.contenedor2{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+}
+
+.seccionacademica{
+    border-bottom: 10px black solid;
+    display: inline-flex;
+}
+
+li{
+    padding: 2%;
+    font-size: 160%;
+    text-align: justify;
+}
+
+.seccionhabilidades{
+    border-bottom: 10px black solid; ;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer{
+    height: 5%;
+}
