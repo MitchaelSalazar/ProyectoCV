@@ -50,6 +50,7 @@ h1{
 .datoscontacto{
     height: 100%;
     width: 100%;
+    padding: 2%;
     border: red 5px solid;
     display: flex;
     flex-direction: column;
@@ -63,10 +64,6 @@ h1{
     padding-bottom: 10%;
 }
 
-.lista1{
-    font-size: 150%;
-}
-
 #fotoperfil{
     display: flex;
     width: 38%;
@@ -78,24 +75,6 @@ h1{
 
 }
 
-.decoracion{
-    width: 10%;
-    height: 10%;
-    position: fixed;
-    border-radius: 50%;
-    background-color: brown;
-    animation-duration: 10000ms;
-
-}
-
-.decoracion:hover{
-    from{
-        transform: scale(2);
-    }
-    to{
-        transform: scale(3);
-    }
-}
 .contenedor{
     background-color: yellow;
     width: 80%;
@@ -105,18 +84,15 @@ h1{
 
 .titulo{
     font-size: 175%;
-    width: 0%;
-    padding: 1% 2% 1%;
+    width: 15%;
+    padding: 1% 3% 0% 1%;
     border-right: 10px black solid;
-    display: flex;
-    align-items: center;
-    justify-content: st;
 }
 
 .resumen{
     border-bottom: 10px black solid; ;
     display: inline-flex;
-    align-items: center;
+    
 }
 
 #resumen{
@@ -127,7 +103,7 @@ h1{
 
 .seccionlaboral{
     border-bottom: 10px black solid; ;
-    display: inline-flex;
+    display: flex;
 }
 
 .experiencia{
@@ -139,6 +115,11 @@ h1{
     font-size: 160%;
 }
 
+li{
+    padding: 2%;
+    font-size: 160%;
+    text-align: justify;
+}
 .contenedor2{
     padding: 2%;
     display: flex;
@@ -146,22 +127,6 @@ h1{
     background-color: rebeccapurple;
 }
 
-.seccionacademica{
-    border-bottom: 10px black solid;
-    display: inline-flex;
-}
-
-li{
-    padding: 2%;
-    font-size: 160%;
-    text-align: justify;
-}
-
-.seccionhabilidades{
-    border-bottom: 10px black solid; ;
-    display: inline-flex;
-    align-items: center;
-}
 
 footer{
     height: 5%;
