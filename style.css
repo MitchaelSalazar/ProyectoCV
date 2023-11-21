@@ -1,133 +1,252 @@
-/*Comentario en CSS*/
 *{
-   
     box-sizing: border-box;
-    margin: 0 auto;
-    font-size: x-large;
-    line-height: 150%;
 }
 
-body{ 
-    font-family: 'Capriola', sans-serif;
+body{
+    margin: 0;
+    padding: 0;
     width: 100vw;
     height: 100vh;
-    padding:1%;
+    font-family: 'Capriola', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(192, 217, 221, 0.658);
 }
 
 header{
-    width: 80%;
+    background-color: rgb(6, 38, 182);
+    font-size: 110%;
+    width: 70%; 
     height: 30%;
-}
-
-.perfil{
-    background-color: rgb(215, 194, 243);
-    height: 100%;
-    border: black 5px solid;
+    border: 2px black solid;
+    border-bottom: 0;
     display: flex;
-    align-items: center;
-    
+    justify-content: space-between;
+    color: white;
 }
 
-#cuadro1{
-    background-color: rgb(191, 238, 238);
+.contacto{
+    padding: 0 0 10px 30px;
     width: 60%;
-    height: 100%;
     display: flex;
-    
+    flex-direction: column;
+    align-items: start;
 }
 
 h1{
-    background-color: aqua;
-    color: brown;
-    height:100%;
-    width: 50%;
-    font-size: 310%;
-    display: flex;
-    align-items: center;
-    
-}
-
-.datoscontacto{
-    height: 100%;
-    width: 100%;
-    padding: 2%;
-    border: red 5px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#contacto{
-    background-color: azure;
-    height: 20%;
-    font-size: 200%;
-    padding-bottom: 10%;
-}
-
-#fotoperfil{
-    display: flex;
-    width: 38%;
-    border-radius: 20%;
+    font-size:100%;
+    margin-bottom: 0;
     transition-duration: 1000ms;
 }
-    #fotoperfil:hover{
-        width: 42%;
 
+h1:hover{
+    font-size: 120%;
 }
 
-.contenedor{
-    background-color: yellow;
+#profesion{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 80%;
+    margin-top: 2%;
+    border: none;
+}
+
+.mediocontacto{
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    font-size: 75%;
+    align-items: center;
+    padding-top: 2%;
+}
+
+#email{
+    text-decoration: none;
+    color:white;
+    transition-duration: 1000ms;
+}
+
+#email:hover{
+    font-size: 200%;
+}
+
+.accesodirecto{
+    width:7.5%;
+    display: flex;
+    align-items: start;
+}
+
+#redsocial1{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    transition-duration: 1000ms;
+}
+
+#redsocial1:hover{
     width: 80%;
-    height: 70%;
-
+    background-color: gray;
+    border-radius: 100%;
 }
 
-.titulo{
-    font-size: 175%;
-    width: 15%;
-    padding: 1% 3% 0% 1%;
-    border-right: 10px black solid;
+#redsocial2{
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    transition-duration: 1000ms;
+}
+
+#redsocial2:hover{
+    width: 130%;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.iconos{
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    gap: 0%;
+    width: 25%;
+}
+
+#foto{
+    width: 18%;
+    margin-left: 7%;
+    height: 100%;
+    transition-duration: 1000ms;
+}
+
+/*Falta corregir un bug*/
+#foto:hover{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.contenido{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .resumen{
-    border-bottom: 10px black solid; ;
-    display: inline-flex;
+    background-color: rgb(240, 240, 240);
+    text-align:justify;
+    padding: 0 1% 0 0.5%;
+    flex:100%;
+    border: 2px black solid;
+    border-top: 0;
+    border-bottom: 0;
+    font-size:75%;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 120%;
+    text-align: center;
+    margin: 10px;
+    height: 25px;
+    padding: 1px;
+    border-bottom: 3px gray solid;
     
 }
-
 #resumen{
-    padding: 2%;
-    font-size: 140%;
-    text-align: justify;
+    margin-left:2%;
 }
 
-.seccionlaboral{
-    border-bottom: 10px black solid; ;
+aside{
+    background-color: rgb(240, 240, 240);
+    padding: 0 2px 2px 2px;
+    margin: 0;
+    flex: 30%;
+    border-left: 2px black solid;
+    font-size: 80%;
     display: flex;
-}
-
-.experiencia{
-    padding: 2%;
+    flex-direction: column;
+    justify-content: start;
     text-align: justify;
+    line-height: 1.5;
 }
 
-.labor{
-    font-size: 160%;
+.lista1{
+    margin: 0;
+    padding: 0 10% 0;
 }
 
 li{
-    padding: 2%;
-    font-size: 160%;
-    text-align: justify;
-}
-.contenedor2{
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    background-color: rebeccapurple;
+    list-style:square
 }
 
-
-footer{
-    height: 5%;
+article{
+    background-color: rgb(240, 240, 240);
+    padding: 0 2px 2px 2px;
+    flex: 70%;
+    border-right: 2px black solid;
+    font-size: 80%;
 }
+
+.seccionlaboral{
+    padding: 0 10px 0;
+    line-height: 1.5;
+}
+
+.labor{
+    margin: 0;
+    padding: 0;
+}
+
+.lista2{
+    margin: 0;
+    padding: 0 2.5% 0;
+}
+
+@media(max-width:750px){
+        
+    header{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contacto{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #profesion{
+        display: flex;
+        align-items: center;
+    }
+
+    .mediocontacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #foto{
+        width: 35%;
+    }
+
+    .resumen{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenido{
+        display: block;
+    }
+}
+    
